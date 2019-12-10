@@ -98,7 +98,7 @@
 
     <form>
         first name: <br>
-        <input type="text" name="firstname" required> <br>
+        <input type="text" name="firstname" required placeholder="firstname"> <br>
         Last name: <br>
         <input type="text" name="lastname">
         <hr>
@@ -126,6 +126,34 @@
         <input type="submit" value="Submit">
         <button type="submit">Isprati</button>
 
+    </form>
+    <hr>
+    <hr>
+    <form>
+        <label for="fullname">Full name*:</label><br>
+        <input type="text" name="fullname" placeholder="FIrstName LastName" required><br>
+        <label for="email" >Email Adress*:</label><br>
+        <input type="email" required><br>
+        <label for="selecttour">Select Tour Package*:</label> <br>
+        <select name="selecttour" required>
+            <option value="goa">goa</option>
+            <option value="nesto druog">Drugo</option>
+        </select><br>
+        <label for="dataarival">Arival date*:</label><br>
+        <input type="date" placeholder="m/d/y" required><br>
+        <label for="persons">Number of persons*:</label><br>
+        <input type="number" required> <br>
+        <label for="avail">What would you want to avail*</label><br>
+        <input type="checkbox" name="avail" value="boarding"> boarding <br>
+        <input type="checkbox" name="avail2"> fooding <br>
+        <input type="checkbox" name="avail1"> sight seeing <br>
+        <label for="discount">Discout coupon code</label> <br>
+        <input type="text"> <br>
+        <input type="search" placeholder="baraj">
+        <label for="terms">Term and conditions*</label> <br>
+        <input type="radio" name="terms" value="agree">I agree
+        <input type="radio" name="terms" value="disagree"> i disagree <br>
+        <button type="submit">Complete reservation</button>
     </form>
 
 </body>
