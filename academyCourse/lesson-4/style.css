@@ -1,0 +1,33 @@
+h1 {
+
+    margin: 30px 10px 30px 40px;
+    background: beige;
+    padding: 20px;
+    border: 1px solid black;
+    width: 300px;
+}
+
+section {
+    background: burlywood;
+    text-align: center;
+}
+
+.first {
+    width: 300px;
+    margin: 0 auto;
+    background: red;
+}
+
+.firstP {
+
+    padding-top: 30px;
+}
+
+.prazen {
+    max-width: 500px;
+    width: 600px;
+    height: 100px;
+    background-color: crimson;
+    border: 5px solid black;
+    padding: 50px;
+}
