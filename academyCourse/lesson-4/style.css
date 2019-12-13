@@ -7,10 +7,6 @@ h1 {
     width: 300px;
 }
 
-section {
-    background: burlywood;
-    text-align: center;
-}
 
 .first {
     width: 300px;
@@ -30,4 +26,69 @@ section {
     background-color: crimson;
     border: 5px solid black;
     padding: 50px;
+}
+
+.card-wraper {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.card {
+    font-family: 'Lato', sans-serif;
+    min-height: 400px;
+    margin-top: 100px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    background: powderblue;
+    text-align: center;
+    padding: 30px 10px;
+    max-width: 300px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.card-img {
+    padding: 1px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid crimson;
+    border-radius: 50%;
+    
+}
+
+.card-title {
+    margin: 30px;
+    color: crimson;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: 700;
+}
+
+.card-text {
+    text-indent: 10px;
+    padding: 0 15px;
+    text-align: justify;
+    font-weight: 300;
+    margin: 30px 0 40px;
+    color: darkblue;
+}
+
+.card-link {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgb(220, 20, 60);
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+    transition: all .3s ease;
+}
+
+.card-link:hover {
+    background: rgba(179, 0, 36, 0.959);
+}
+.card-link:active {
+    color: yellow;
+}
+.card-link:focus {
+    border: 1px solid black;
 }
