@@ -1,0 +1,26 @@
+nav {
+    background: #010101;
+    height: 60px;
+    border-bottom: 5px solid blue;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    float: left;
+  }
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 24px 19px;
+    bottom: 5px;
+  }
+
+  nav ul li a:hover {
+    background-color: blue;
+  }
