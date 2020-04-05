@@ -11,7 +11,7 @@ const artcleTpl = `
         <p class="lead ml-5">{{ date }}</p>
         
         {{ #tags }}
-            <a href="../tags/?tag={{ . }}" class="card-link rounded-pill border border-info text-info  pb-1 px-2 ml-5"> {{ . }} </a>
+            <a href="igorhristov.github.io/portfolio/blog/tags/?tag={{ . }}" class="card-link rounded-pill border border-info text-info  pb-1 px-2 ml-5"> {{ . }} </a>
         {{ /tags }}
         <hr class="w-100 mb-3 p-1 rounded-pill bg-warning" />
         
