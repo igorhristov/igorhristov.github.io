@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Collaborative Frontend Project</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body class="bg-warning">
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="./" class="navbar-brand float-left font-weight-bold text-warning">
+                    TEAM-B</a
+                >
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item m-1">
+                            <a class="nav-link btn btn-lg btn-outline-primary p-4 active" href="./"
+                                >Articles</a
+                            >
+                        </li>
+
+                        <li class="nav-item m-1">
+                            <a
+                                class="nav-link btn btn-lg btn-outline-primary p-4"
+                                href="./authors/"
+                                >Authors</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-dark text-light">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 font-weight-bold text-warning mt-4 ml-5">Articles</h1>
+                    <p class="lead ml-5">
+                        tuka treba nekoj naslov za artiklite da stavime za da rabote ka so treba :i
+                        ne mi rabote hrto ako ne e celosen text ajdee. ccc
+                    </p>
+                </div>
+
+                <div class="col-12 mt-4">
+                    <div id="selectRoot"></div>
+
+                    <ul class="nav navbar-nav flex-row float-right">
+                        <li class="nav-item ">
+                            <span class="nav-link bg-outline-secondary pr-1">
+                                <span id="articlesNum"></span>
+                                Articles
+                            </span>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link btn btn-outline-secondary px-4" id="sort-btn" href="#">Sort by name</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="w-100 mb-1 p-1 rounded-pill bg-warning" />
+            </div>
+        </div>
+
+        <div id="root"></div>
+
+        <script src="https://unpkg.com/mustache@latest"></script>
+        <script src="./data/data.js"></script>
+        <script src="./data/tags.js"></script>
+        <script src="./data/articles.js"></script>
+        <script src="./data/authors.js"></script>
+        <script src="./data/comments.js"></script>
+        <script src="./templates/cardTpl.js"></script>
+        <script src="./templates/authorTpl.js"></script>
+        <script src="./templates/tagsBtnTpl.js"></script>
+        <script src="./data/mainFunction.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
