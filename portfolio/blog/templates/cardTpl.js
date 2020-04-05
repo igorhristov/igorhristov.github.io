@@ -11,7 +11,7 @@ const ARTICLE_CARD = `
                         </span>
                     </h4>
                     
-                    <a class="card-link text-warning" href="igorhristov.github.io/portfolio/blog/article/?id={{ id }}">
+                    <a class="card-link text-warning" href="/igorhristov.github.io/portfolio/blog/article/?id={{ id }}">
                         <h3 class="text-center p-4"> {{ title }} </h3>
                     </a>
                     <div class="row mb-4">
@@ -25,7 +25,7 @@ const ARTICLE_CARD = `
                                         Autor
                                     </span> </br>
                                     <span class="text-center">
-                                        <a class="card-link rounded-pill border border-warning text-warning pb-1 px-2" href="igorhristov.github.io/portfolio/blog/author/?id={{ authorId }}">
+                                        <a class="card-link rounded-pill border border-warning text-warning pb-1 px-2" href="/igorhristov.github.io/portfolio/blog/author/?id={{ authorId }}">
                                         {{ name }} 
                                         </a>
                                     </span>
@@ -35,7 +35,7 @@ const ARTICLE_CARD = `
                                     <span class="text-muted text-center">
                                         {{ numberOfComments }}
                                     </span> </br>
-                                    <a class="card-link rounded-pill border border-warning text-warning pb-1 px-2" href="igorhristov.github.io/portfolio/blog/article/?id={{ id }}#commentReplay"> 
+                                    <a class="card-link rounded-pill border border-warning text-warning pb-1 px-2" href="/igorhristov.github.io/portfolio/blog/article/?id={{ id }}#commentReplay"> 
                                         Join Conversation -> 
                                     </a>
                                 </div>
@@ -47,11 +47,11 @@ const ARTICLE_CARD = `
                         <p class="card-text">{{ summary }}..</p>
                     </div>
                     <div class="actions">
-                        <a href="igorhristov.github.io/portfolio/blog/article/?id={{ id }}" class="card-link btn btn-outline-warning">Read More >>></a>
+                        <a href="/igorhristov.github.io/portfolio/blog/article/?id={{ id }}" class="card-link btn btn-outline-warning">Read More >>></a>
                     </div>
                     <div class="actions mt-5 mb-2">
                         {{#tags}}
-                            <a href="igorhristov.github.io/portfolio/blog/tags/?tag={{ . }}" class="card-link rounded-pill border border-info text-info  pb-1 px-2"> {{ . }} </a>
+                            <a href="/igorhristov.github.io/portfolio/blog/tags/?tag={{ . }}" class="card-link rounded-pill border border-info text-info  pb-1 px-2"> {{ . }} </a>
                         {{/tags}}
                     </div>
                 </div>
