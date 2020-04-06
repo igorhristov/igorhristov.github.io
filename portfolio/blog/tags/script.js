@@ -3,6 +3,7 @@ const TAG_PAGE_RUN = async () => {
     const articles = await getArticles();
     const urlParams = new URLSearchParams(window.location.search);
     const thisTag = urlParams.get('tag');
+    const authors = await getAuthors();
 
     d.querySelector('#tagNameId').innerText = thisTag;
 
@@ -34,7 +35,6 @@ const TAG_PAGE_RUN = async () => {
             sortBtn.innerText = 'Sort by name';
         }
     });
-    const authors = await getAuthors();
     d.querySelector('#tagsArticlesNum').innerText = tagsArticlesFilter.length;
 
     let currentPage = 0;
