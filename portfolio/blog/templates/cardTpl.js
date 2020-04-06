@@ -47,11 +47,11 @@ const ARTICLE_CARD = `
                         <p class="card-text">{{ summary }}..</p>
                     </div>
                     <div class="actions">
-                        <a href="/igorhristov.github.io/portfolio/blog/article/?id={{ id }}" class="card-link btn btn-outline-warning">Read More >>></a>
+                        <a href="https://igorhristov.github.io/portfolio/blog/article/?id={{ id }}" class="card-link btn btn-outline-warning">Read More >>></a>
                     </div>
                     <div class="actions mt-5 mb-2">
                         {{#tags}}
-                            <a href="/igorhristov.github.io/portfolio/blog/tags/?tag={{ . }}" class="card-link rounded-pill border border-info text-info  pb-1 px-2"> {{ . }} </a>
+                            <a href="https://igorhristov.github.io/portfolio/blog/tags/?tag={{ . }}" class="card-link rounded-pill border border-info text-info  pb-1 px-2"> {{ . }} </a>
                         {{/tags}}
                     </div>
                 </div>
