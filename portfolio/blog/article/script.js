@@ -15,8 +15,20 @@ const ARTICLE_RUN = async () => {
       })
     });
     console.log(thisArticleComments);
-    thisArticleComments.forEach(article => {
-      article.date = new Date(article.date).toDateString()
+
+    thisArticleComments.forEach(comment => {
+      comment.date = new Date(comment.date).toDateString()
+
+      allAuthors.forEach(author => {
+        if (author.id === comment.userId) {
+          comment.name = author.name;
+          comment.avatar = author.avatar
+        }
+        if (!comment.name) {
+          comment.name = 'Guest'
+          comment.avatar = 'https://avatars.sched.co/8/fc/8757776/avatar.jpg?2a2'
+        }
+      })
     })
   
     const articles = await getArticles();

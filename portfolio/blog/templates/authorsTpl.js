@@ -7,7 +7,7 @@ const authorsTpl = `
                     <div class="card-body text-light text-center border border-info rounded shadow">
                         <img src="{{ avatar }}" class="rounded-circle border border-warning border-top-0" width="128" height="128">
                         
-                        <a class="card-link text-warning" href="/igorhristov.github.io/portfolio/blog/author/?id={{ id }}">
+                        <a class="card-link text-warning" href="/igorhristov.github.io/portfolio/blog./author/?id={{ id }}">
                             <h3>{{ name }}</h3>
                         </a>
                         <div class="message">                   

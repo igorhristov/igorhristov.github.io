@@ -46,6 +46,8 @@ const artcleTpl = `
     </div>
     {{#comentari}}
         <div class='container'>
+        <img src="{{ avatar }}" class="rounded-circle border border-light border-top-0" width="50" height="50">
+        <h4 class="font-italic"> {{name}} </h4>
             <p><span>{{date}}</span></p>
             <p>{{{ body }}}</p>
             <hr class="w-100 mb-3 rounded-pill bg-warning" />
