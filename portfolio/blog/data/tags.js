@@ -1,1 +1,0 @@
-const getTags = () => Promise.resolve(data.tags);
